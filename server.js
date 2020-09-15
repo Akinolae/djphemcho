@@ -1,7 +1,6 @@
 const express =  require('express');
 const path = require('path');
 const expressLayout = require('express-ejs-layouts');
-// const expressLayout = require("express-ejs-layouts");
 
 // App is initialised
 const app = express();

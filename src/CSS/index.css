@@ -177,27 +177,34 @@ body {
   border: #fff 5px solid;
 }
 .mixImage {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
+}
+.mixImage img {
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+.mixImage img:hover {
+  transform: scale(1.1);
 }
 .mixtape_download {
-    display: flex;
-    width: 70%;
-    margin: auto;
-    border-bottom: 2px solid #fff;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  border-bottom: 2px solid #fff;
 }
 .mixtape_download > div {
-    width: 50%;
+  width: 50%;
 }
-.link a  {
-    text-decoration: none;
-    color: #ffffff;
-    transition: all ease 0.2s;
+.link a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all ease 0.2s;
 }
 .link div {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .link a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .section2About {
   display: flex;
@@ -299,7 +306,7 @@ body {
     padding-right: 5%;
   }
   .about_img {
-      width: 20%;
+    width: 20%;
   }
   .about_img img {
     height: 100px;

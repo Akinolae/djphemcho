@@ -2,7 +2,7 @@
   "name": "boomentertainment",
   "version": "1.0.0",
   "description": "entertainment website owned by Dj Phemcho",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
