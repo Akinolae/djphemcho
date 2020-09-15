@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="../src/images/ecommerce-logo-png-download-512512-free-transparent-shopclues-shopclues-png-900_520.jpg"
+        type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <title>Document</title>
+</head>
+<body>
+         <div class="container navigation">
+             <div class="logo">
+                 <a href="/"><img src="images/logo.jpg" width="75" height="50" alt="logo"></a>
+             </div>
+             <div class="nav" id="nav">
+                 <nav>
+                     <ul>
+                         <li><a href="/">home</a></li>
+                         <li><a href="/about">about</a></li>
+                         <li><a href="/contact">contact us</a></li>
+                         <li><a href="/gallery">gallery</a></li>
+                         <li><a href="#mixtapes">mixtapes</a></li>
+                     </ul>
+                 </nav>
+             </div>
+             <div class="burger" id="burger">
+                 <div class="line1"></div>
+                 <div class="line2"></div>
+                 <div class="line3"></div>
+             </div>
+             </div>
+
+          <%- body -%>
+        <footer style="text-align: center;">&copy; Djphemco300 <span id="currentDate"></span></footer>
+          <script src="js/index.js"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+              AOS.init({
+                  offset: 120,
+                  delay: 0,
+                  duration: 1000,
+              });
+          </script>
+</body>
+</html>
