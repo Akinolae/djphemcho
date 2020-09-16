@@ -23,71 +23,23 @@ body {
 }
 
 /* Navigation */
-.navigation {
-  height: 30px;
-  width: 100%;
-  display: flex;
-  margin-top: 10px;
+nav {
+  background: none;
 }
-
-.nav {
-  width: 50%;
-  margin-left: auto;
-  display: flex;
-  justify-items: space-between;
+.navbar-toggler {
+  background-color: #ffffffc0;
+  height: 15px;
 }
-
-.nav ul {
-  display: flex;
-}
-
-.nav ul li {
-  list-style: none;
-  padding: 10px;
-}
-
-.nav ul li a {
-  text-decoration: none;
+.navbar-toggler-icon {
   color: #ffffff;
-  transition: all ease 0.3s;
-  text-transform: capitalize;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.nav ul li a:hover {
-  opacity: 0.4;
-  transform: scale(1.2);
-  border-bottom: 2px solid rgb(255, 255, 255);
+.collapse ul li a { 
+  color: #ffffff;
+  font-family: sans-serif;
 }
-
 .logo {
   width: 30%;
-}
-
-.burger {
-  height: 10px;
-  width: 30;
-  margin-left: auto;
-  display: none;
-  cursor: pointer;
-  transition: all ease 0.3s;
-}
-
-.burger:active {
-  border: 1px solid white;
-}
-
-.burger:hover {
-  opacity: 0.4;
-}
-
-.burger div {
-  height: 4px;
-  width: 35px;
-  background: white;
-  margin: 4px;
 }
 
 /* section 1 */
@@ -95,11 +47,9 @@ body {
   margin-top: 25px;
   height: 500px;
   max-width: 100%;
-  background: linear-gradient(
-      to right,
+  background: linear-gradient(to right,
       rgba(5, 5, 5, 0.856),
-      rgba(12, 12, 12, 0.9)
-    ),
+      rgba(12, 12, 12, 0.9)),
     url("../images/diesel.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -114,15 +64,18 @@ body {
 .section2 {
   height: 50vh;
 }
+
 .middle {
   padding: 40px;
   margin-left: 10%;
   width: 15%;
 }
+
 .middle p {
   font-size: 18px;
   border-bottom: #fff 2px solid;
 }
+
 .section1 p {
   color: white;
   width: 60%;
@@ -150,6 +103,8 @@ body {
   background-color: #ffffff;
   color: #000;
 }
+
+/* ========================= */
 /* Homepage */
 .socials {
   width: 40%;
@@ -158,54 +113,67 @@ body {
   align-items: center;
   margin: auto;
 }
+
 .socials i {
   color: #fff;
   font-size: 40px;
   padding: 10px;
   transition: all ease 0.3s;
 }
+
 .socials i:hover {
   opacity: 0.5;
 }
+
 .about_img {
   width: 10%;
 }
+
 .about_img img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
   border: #fff 5px solid;
 }
+
 .mixImage {
   padding-bottom: 15px;
 }
+
 .mixImage img {
   border-radius: 10px;
   transition: all ease 0.3s;
 }
+
 .mixImage img:hover {
   transform: scale(1.1);
 }
+
 .mixtape_download {
   display: flex;
   width: 70%;
   margin: auto;
   border-bottom: 2px solid #fff;
 }
-.mixtape_download > div {
+
+.mixtape_download>div {
   width: 50%;
 }
+
 .link a {
   text-decoration: none;
   color: #ffffff;
   transition: all ease 0.2s;
 }
+
 .link div {
   margin-top: 30px;
 }
+
 .link a:hover {
   opacity: 0.5;
 }
+
 .section2About {
   display: flex;
   justify-content: space-around;
@@ -213,9 +181,11 @@ body {
   margin: 40px auto;
   height: 100%;
 }
+
 .about_text {
   width: 70%;
 }
+
 /* About page design */
 .about {
   margin-top: 10px;
@@ -236,9 +206,11 @@ body {
   width: 60%;
   text-align: center;
 }
+
 .about-text h1 {
   padding: 5px;
 }
+
 .about-side {
   color: #fff;
   text-align: center;
@@ -278,17 +250,21 @@ body {
   font-size: 14px;
 }
 
+/* ================================= */
+
 /* mediaquery */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
+
   .section2About {
     width: 80%;
     margin-top: 10px;
     height: 80%;
     display: flex;
   }
+
   .middle {
     padding: 20px;
     padding-top: 30px;
@@ -300,33 +276,40 @@ body {
     font-size: 18px;
     border-bottom: #fff 2px solid;
   }
+
   .about_text {
     width: 60%;
     height: 400px;
     padding-right: 5%;
   }
+
   .about_img {
     width: 20%;
   }
+
   .about_img img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: #fff 5px solid;
   }
+
   .about_text p {
     width: 100%;
     display: flex;
     font-size: 13px;
   }
+
   .socials i {
     color: #fff;
     font-size: 25px;
     padding: 10px;
   }
+
   .section1 {
     height: 50vh;
   }
+
   .section1 p {
     color: white;
     width: 80%;
@@ -338,6 +321,7 @@ body {
     padding-bottom: 10px;
     text-align: center;
   }
+
   .nav {
     position: absolute;
     top: 10vh;
@@ -371,24 +355,8 @@ body {
   }
 }
 
-.burgerIsactive {
-  transform: translateX(0%);
-}
-
-.line1,
-.line2,
-.line3 {
-  transition: all ease 0.3s;
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+@media screen and (max-width: 360px) {
+  body {
+    scroll-behavior: smooth;
+  }
 }
