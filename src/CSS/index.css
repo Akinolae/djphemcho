@@ -62,7 +62,7 @@ nav {
 }
 
 .section2 {
-  height: 50vh;
+  height: 30vh;
 }
 
 .middle {
@@ -358,5 +358,20 @@ nav {
 @media screen and (max-width: 360px) {
   body {
     scroll-behavior: smooth;
+  }
+  .middle {
+    width: 35%;
+  }
+  .section2About {
+    width: 100%;
+  }
+  .mixtape_download {
+    width: 80%;
+    margin: auto;
+  }
+  .middle p {
+    width: 100%;
+    font-size: 18px;
+    border-bottom: #fff 2px solid;
   }
 }
