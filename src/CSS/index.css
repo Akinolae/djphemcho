@@ -17,22 +17,22 @@ body {
   align-items: center;
 }
 
-ul {
+.nav ul {
   display: flex;
   justify-content: space-evenly;
   width: 40%;
 }
 
-ul li {
+.nav ul li {
   list-style: none;
   text-transform: capitalize;
   transition: all ease 0.3s;
 }
 
-ul li:hover{
+.nav ul li:hover{
   letter-spacing: 2px;
 }
-ul li a {
+.nav ul li a {
   text-decoration: none;
   font-weight: 700;
   color:white;
@@ -63,16 +63,18 @@ ul li a {
 }
 .dash {
   border-top: 1px dashed aquamarine;
- width: 35%;
- height: 100%;
+  width: 35%;
+  height: 100%;
 }
-.about p {
+.about p,
+.contact p {
   padding-top: 70px;
   color: aquamarine;
   font-size: 28px;
   font-weight: 600;
 }
-.about h1 {
+.about h1, 
+.contact h1 {
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -91,7 +93,8 @@ ul li a {
   object-fit: cover;
 }
 
-.about .about-bottom {
+.about .about-bottom,
+.contact .contact-bottom {
   width: 10%;
   height: 30px;
   display: flex;
@@ -107,9 +110,9 @@ ul li a {
   font-size: 28px;
   font-weight: 600;
 }
-.about .about-text {
+ .about-text {
   text-align: left;
-  width: 50%;
+  max-width: 70%;
 }
 .about .about-text h4 {
   padding-top: 20px;
@@ -124,23 +127,26 @@ ul li a {
   margin-top: 30px;
   margin-left: 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
-.whatsApp {
-  height: 100px;
-  width: 100px;
+.socials {
+  width: 40%;
+  height: 30px;
   position: fixed;
-  top: 80%;
-  left: 90%;
-  border-radius: 50%;
   display: flex;
+  top: 90%;
+  left: 35%;
   justify-content: center;
   align-items: center;
-  background: none;
+}
+.whatsApp:hover {
+  transform: translateY(-2px);
 }
 .img {
   object-fit: cover;
   height: 100%;
+  border-radius: 50%;
   width: 100%;
   background: none;
 }
@@ -158,5 +164,203 @@ ul li a {
 }
 .grid img {
   width: 350px;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Contact */
+.contact {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contact-text p {
+  color: white;
+  padding-top: 0px;
+  opacity: 0.5;
+  font-size: 16px;
+
+}
+
+.contact-text ul {
+  display: block;
+}
+.contact-text h3 {
+  color: white;
+  line-height: 3rem;
+  font-weight: 900;
+}
+.contact-text ul li {
+  color: white;
+  padding-top: 5px;
+  font-weight: 800;
+  list-style: none;
+  line-height: 1.5em;
+}
+.contact-text ul li span {
+  font-weight: 600;
+  opacity: 0.5;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.form p {
+  color: white;
+  padding-bottom: 15px;
+}
+.form button {
+  background-color: rgb(38, 95, 76);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 80px;
+  margin-top: 10px ;
+  border-radius: 15px;
+}
+.form input {
+  outline: none;
+  margin-top: 10px;
+  height: 45px;
+  padding-left: 15px;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(82, 80, 80, 0.487);
+  border-bottom: yellow;
+}
+
+.form textarea {
+  resize: none;
+  outline: none;
+  margin-top: 10px;
+  height: 90px;
+  padding-left: 15px;
+  padding-top: 10px;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(82, 80, 80, 0.487);
+}
+
+@media  screen and (max-width: 360px) {
+  .contact-main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text {
+    width: 100%;
+    text-align: left;
+  }
+  .about-img-main {
+    width: 100%;
+  }
+.grid {
+  width: 80%;
+  margin:8% auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.1rem;
+}
+.gallery {
+  width: 100%;
+}
+.grid img {
+  width: 80%;
+  margin: auto;
+  height: 250px;
+}
+  .dash {
+    width: 80%;
+    border-top: 3px dashed aquamarine;
+  }
+  .nav ul {
+    display: none;
+  }
+  .form {
+    width: 100%;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    top: 85%;
+    left: 70%;
+  }
+  .socials ul li {
+    list-style: none;
+  }
+  .socials ul li a {
+    text-decoration: none;
+  }
+  .contact-text{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* .about-text{
+    margin: auto;
+    width: 100%;
+  } */
+  .about .about-text h4 {
+    width: 100%;
+  }
+  .whatsApp {
+    left: 80%;
+    top: 88%;
+  }
+}
+
+@media  screen and (max-width: 480px) {
+  .contact-main, 
+  .about-main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav ul {
+    display: none;
+  }
+  .form {
+    width: 100%;
+  }
+  .contact-text {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .about-img-main {
+    width: 100%;
+  }
+  .whatsApp {
+    left: 80%;
+    top: 88%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-main {
+    width: 90%;
+    margin: auto;
+  }
+  .nav ul {
+    width: 60%;
+  }
 }

@@ -20,6 +20,10 @@ app.get('/about', (req, res) => {
     res.render('about');
 })
 
+app.get('/mixtape', (req, res) => {
+    res.render("mixtape")
+})
+
 app.get('/contact', (req, res) => {
     res.render('contact');
 })
@@ -27,7 +31,9 @@ app.get('/contact', (req, res) => {
 app.get("/gallery", (req, res)=> {
     res.render("gallery");
 })
-
+app.get("/music", (req, res) => {
+    res.render("music")
+})
 
 const port = process.env.PORT || 5050;
 
