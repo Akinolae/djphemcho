@@ -6,6 +6,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: black;
+  height: 100%;
 }
 .nav {
   display: flex;
@@ -16,7 +17,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.logo {
+  width: 70px;
+  height: 70px;
+}
+.logo img {
+  width: 100%;
+  object-fit: cover;
+}
 .nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -37,16 +45,32 @@ body {
   font-weight: 700;
   color:white;
 }
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+}
+.hamburger:hover {
+  opacity: 0.5;
+}
+.hamburger div {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  margin-top: 5px;
+}
 .header {
   background-image: url('../images/FB_IMG_1596112399296.jpg');
-  background-position: center;
+  background-position:top left;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 
 .header h1 {
@@ -259,6 +283,14 @@ body {
 }
 
 @media  screen and (max-width: 360px) {
+  body{
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .nav ul li {
+    /* opacity: 0; */
+  }
   .contact-main{
     width: 90%;
     margin: auto;
@@ -272,8 +304,11 @@ body {
   .about-img-main {
     width: 100%;
   }
+  .hamburger {
+    display: block;
+  }
 .grid {
-  width: 80%;
+  width: 90%;
   margin:8% auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -283,9 +318,10 @@ body {
   width: 100%;
 }
 .grid img {
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: 250px;
+  object-fit: cover;
 }
   .dash {
     width: 80%;
@@ -293,6 +329,16 @@ body {
   }
   .nav ul {
     display: none;
+    position: absolute;
+    overflow-x: hidden;
+    background-color: red;
+    right: 0px;
+    height: 50vh;
+    top: 10vh;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
   }
   .form {
     width: 100%;
@@ -328,6 +374,9 @@ body {
 }
 
 @media  screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .contact-main, 
   .about-main {
     width: 90%;
@@ -335,9 +384,12 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .nav ul {
-    display: none;
+  .hamburger {
+    display: block;
   }
+  /* .nav ul {
+    display: none;
+  } */
   .form {
     width: 100%;
   }
@@ -352,6 +404,21 @@ body {
   .whatsApp {
     left: 80%;
     top: 88%;
+  }
+  .grid {
+    width: 90%;
+    margin:8% auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+  .gallery {
+    width: 100%;
+  }
+  .grid img {
+    width: 100%;
+    margin: auto;
+    height: 250px;
   }
 }
 
