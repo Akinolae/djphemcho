@@ -4,7 +4,6 @@ const animateNav = () => {
     const burger = document.getElementById("burger");
     const nav = document.getElementById("nav");
     const footerDate = document.getElementById("currentDate");
-    footerDate.textContent = date.getFullYear();
 
     // footerDate.textContent = "hey"
     burger.addEventListener("click", () => {

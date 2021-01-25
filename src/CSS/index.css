@@ -282,12 +282,46 @@ body {
   background-color: rgba(82, 80, 80, 0.487);
 }
 
+/* Mixtapess */
+.mixtape {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 0.1rem;
+  height: 400px;
+}
+
+.mixtape div  {
+  height: 270px;
+  width: 270px;
+  cursor: pointer;
+  background-color: aliceblue;
+  transition: all ease-in-out 0.2s;
+}
+.mixtape div img {
+  width: 100%;
+  object-fit: cover;
+}
+.mixtape div:hover {
+  transform: scale(1.01);
+}
 @media  screen and (max-width: 360px) {
   body{
     overflow-x: hidden;
     width: 100%;
   }
+  .mixtape {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 30px;
+  }
 
+  .mixtape div {
+    gap: 1.5rem;
+  }
   .nav ul li {
     /* opacity: 0; */
   }
