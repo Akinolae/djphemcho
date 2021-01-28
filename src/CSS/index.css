@@ -420,6 +420,19 @@ body {
   body {
     overflow-x: hidden;
   }
+  .nav ul {
+    display: none;
+    position: absolute;
+    overflow-x: hidden;
+    background-color: red;
+    right: 0px;
+    height: 50vh;
+    top: 10vh;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
   .mixtape {
     width: 90%;
     margin: auto;
@@ -491,5 +504,16 @@ body {
   }
   .nav ul {
     width: 60%;
+  }
+  .mixtape {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px;
+  }
+  .mixtape div {
+    width: 100%;
+    gap: 1.5rem;
   }
 }
