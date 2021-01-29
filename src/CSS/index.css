@@ -288,21 +288,21 @@ body {
 
 /* Mixtapess */
 .mixtape {
+  width: 80%;
+}
+.mixtape .grid {
+  gap: 0.1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 80%;
-  margin: auto;
-  gap: 0.1rem;
 }
-
-.mixtape div  {
+.mixtape .grid div  {
   height: 270px;
   width: 270px;
   cursor: pointer;
   background-color: aliceblue;
   transition: all ease-in-out 0.2s;
 }
-.mixtape div img {
+.mixtape .grid div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -318,16 +318,17 @@ body {
   }
   .mixtape {
     width: 100%;
-    margin: auto;
-    display: grid;
+    background-color: red;
+  }
+  .mixtape .grid {
+    /* width: 100%; */
+    /* margin: auto; */
+    display: none;
     grid-template-columns: 1fr;
     padding-bottom: 30px;
+    gap: 0.5rem;
   }
 
-  .mixtape div {
-    width: 100%;
-    gap: 1.5rem;
-  }
   .nav ul li {
     /* opacity: 0; */
   }
@@ -433,18 +434,15 @@ body {
     width: 50%;
     transform: translateX(100%);
   }
-  .mixtape {
-    width: 90%;
+  .mixtape .grid {
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 30px;
+    gap: 0.5rem;
   }
 
-  .mixtape div {
-    width: 100%;
-    gap: 1.5rem;
-  }
 
   .contact-main, 
   .about-main {
