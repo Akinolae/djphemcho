@@ -348,6 +348,9 @@ body {
   .about-img-main {
     width: 100%;
   }
+  .about-img {
+    width: 100%;
+  }
   .hamburger {
     display: block;
   }
@@ -472,6 +475,9 @@ body {
     margin-bottom: 20px;
   }
   .about-img-main {
+    width: 100%;
+  }
+  .about-img {
     width: 100%;
   }
   .whatsApp {
